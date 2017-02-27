@@ -1,7 +1,7 @@
 {
 	"name": "@alexsasharegan/browser-shortcuts",
 	"version": "1.0.0",
-	"description": "A set of named constants mapping to event keycodes.",
+	"description": "Create compound shortcut events and attach listeners.",
 	"main": "src/index.js",
 	"repository": {
 		"type": "git",
@@ -14,7 +14,7 @@
 		"build-src": "babel src -d dist",
 		"bundle-src": "browserify dist -o dist/bundle.js",
 		"bundle-prod": "browserify dist/index.min.js -o dist/bundle.min.js",
-		"publish": "npm run build && npm publish --access=public",
+		"publish": "npm publish --access=public",
 		"patch": "npm run build && npm version patch",
 		"minor": "npm run build && npm version minor",
 		"major": "npm run build && npm version major"
